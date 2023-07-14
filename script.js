@@ -1,4 +1,5 @@
 const grid = document.querySelector('#grid');
+const clearBtn = document.querySelector('.clear-btn')
 
 function createGrid(rows, columns){
     grid.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
@@ -21,12 +22,18 @@ grid.addEventListener('mouseover', (e) => {
     if (!isMouseDown) return;
 
     if (isMouseDown) {
-        e.target.style.backgroundColor = 'darkgrey';
+        e.target.style.backgroundColor = '#202528';
     };
 });
 
 grid.addEventListener('mouseup', () => {
     isMouseDown = false;
+});
+
+clearBtn.addEventListener('click', () => {
+    grid.childNodes.forEach(gridSquare => {
+        gridSquare.style.backgroundColor = 'rgb(236, 236, 236)';
+    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
