@@ -2,7 +2,7 @@
 
 ![Etch-A-Sketch preview screenshot](/images/?raw=true "Etch-A-Sketch")
 
-Web based version of the etch-a-sketch.
+A web based version of the etch-a-sketch. Allows the user to draw randomly within a chosen grid size.
 
 ## Programming Languages
 
