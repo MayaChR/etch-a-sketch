@@ -16,9 +16,9 @@ A web based version of the etch-a-sketch. Allows the user to draw randomly withi
 
 ## What I Learned\Practiced
 
-* Creating ui element dynamically
+* Creating UI elements dynamically
 * DOM manipulation
-* Creating an interactive user interface
+* Creating an interactive UI
 
 ## Takeaway
 
