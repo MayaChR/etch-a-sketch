@@ -13,11 +13,9 @@
 }
 
 #grid {
-    width: 600px;
-    height: 600px;
+    width: 480px;
+    height: 480px;
     display: grid;
-    /* grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr); */
     background-color: aqua;
 }
 
