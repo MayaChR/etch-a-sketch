@@ -55,11 +55,27 @@ body {
     border: 0.4px solid rgb(214, 214, 214);
 }
 
-.clear-btn {
-    width: 140px;
-    height: 60px;
-    border-radius: 8px;
+.grid-options {
     position: absolute;
-    top: 700px;
+    top: 700px;  
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #DDE6ED;
+}
+
+.grid-size input {
+    width: 40px;
+    font-size: 20px;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+.clear-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
     background-color: #DDE6ED;
 }
