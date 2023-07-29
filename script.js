@@ -1,16 +1,34 @@
 const grid = document.querySelector('#grid');
 const clearBtn = document.querySelector('.clear-btn')
+const gridInput = document.querySelector('#change-grid')
 
-function createGrid(rows, columns){
-    grid.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
-    grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+function createGrid(num){
+    grid.style.gridTemplateRows = `repeat(${num}, 1fr)`;
+    grid.style.gridTemplateColumns = `repeat(${num}, 1fr)`;
     
-    for (let i = 0; i < rows * columns; i++) {
+    for (let i = 0; i < num * num; i++) {
         const square = document.createElement('div');
         square.classList.add('grid-square');
         grid.appendChild(square);
     };
 };
+
+function changeGrid() {
+    let newGrid = gridInput.value;
+
+    if (!newGrid) {
+        createGrid(24);
+    } else if (newGrid >= 2 && newGrid <= 100) {
+        while (grid.firstChild) {
+            grid.removeChild(grid.lastChild);
+        };
+        createGrid(newGrid);
+    };
+};
+
+gridInput.addEventListener('input', () => {
+    changeGrid()
+})
 
 let isMouseDown = false;
 
@@ -26,7 +44,7 @@ grid.addEventListener('mouseover', (e) => {
     };
 });
 
-grid.addEventListener('mouseup', () => {
+document.addEventListener('mouseup', (e) => {
     isMouseDown = false;
 });
 
@@ -37,5 +55,5 @@ clearBtn.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    createGrid(24, 24);
+    createGrid(24);
 });
