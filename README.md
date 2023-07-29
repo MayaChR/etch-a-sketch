@@ -1,6 +1,6 @@
 # Etch-A-Sketch
 
-![Etch-A-Sketch preview screenshot](/images/?raw=true "Etch-A-Sketch")
+![Etch-A-Sketch preview screenshot](/images/Etch-A-Sketch.png?raw=true "Etch-A-Sketch")
 
 A web based version of the etch-a-sketch. Allows the user to draw randomly within a chosen grid size.
 
