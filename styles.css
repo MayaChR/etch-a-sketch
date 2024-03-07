@@ -61,8 +61,7 @@ body {
 }
 
 .grid-options {
-    position: absolute;
-    top: 700px;  
+    margin-top: 20px;  
     width: 480px;
     display: flex;
     justify-content: space-between;
